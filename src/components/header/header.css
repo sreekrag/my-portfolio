@@ -1,0 +1,125 @@
+.talkBtn
+{
+    width:10rem!important;
+}
+.me
+{
+    height:10rem;
+}
+header{
+    height:65rem;
+    padding-top:7rem;
+    overflow:hidden;
+}
+.header__container{
+    text-align: center;
+    height:100%;
+    position:relative;
+}
+.Typewriter{
+    font-size:3rem;
+    color:antiquewhite
+}
+/* CTA */
+.cta
+{
+    margin-top: 2.5rem;
+    display:flex;
+    gap:1.3rem;
+    justify-content:center;
+}
+
+/* Social icon */
+.header__socials
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.6rem;
+    position: absolute;
+    left:0;
+    margin-top:28rem;
+}
+.header__socials::after
+{
+content:"";
+width:1px;
+height:2rem;
+background: var(--color-primary);
+}
+
+/* Image me class*/
+/* .me{
+    background: linear-gradient(var(--color-primary),transparent);
+    width:22rem;
+    height:30rem;
+    position: absolute;
+    left:calc(50% - 11rem);
+    margin-top:4rem;
+    border-radius: 12rem 12rem 0 0;
+    overflow:hidden;
+    padding:5rem 1.5rem 1.5rem 1.5rem;
+} */
+.myImg
+{
+    width:30rem;
+    height:30rem;
+    position: absolute;
+    left:calc(50% - 15rem);
+    margin-top:9rem;
+    border-radius:50%;
+}
+/* Scroll down */
+.scroll__down{
+    position:absolute;
+    right:-2.3rem;
+    margin-top:24rem;
+    transform:rotate(90deg);
+    font-weight: 300;
+    font-size: 0.9rem;
+}
+
+
+/* Media query(medium devices */
+
+@media screen and (max-width:1024px){
+    .Typewriter{
+        font-size:1.5rem;
+    }
+    header{
+        height:60rem;
+    }
+    .header__socials
+{
+   
+    bottom:8rem;
+}
+.scroll__down{
+    bottom:8rem;
+}
+  }
+  
+  /* Media query(Small devices)*/
+  
+  @media screen and (max-width:600px){
+    
+    .Typewriter{
+        font-size:1.2rem;
+    }
+    header{
+        height: 42rem;;
+    }
+
+    .header__socials,.scroll__down{
+        display:none;
+    }
+    .myImg
+{
+    width:18rem;
+    height:18rem;
+    position: absolute;
+    left:calc(50% - 9rem);
+    margin-top:5rem;
+    border-radius:50%;
+}
+  }
